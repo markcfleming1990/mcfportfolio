@@ -7,79 +7,72 @@
         <title>Mark Fleming's Portfolio</title>
     </head>
 
-<!--Nav bar anchor elements  -->
-<!--give some spacing for photo use wedding photo if needed -->
-<body> 
 
-  <header>
-      <nav>
-        <ul>
-          <li>
-          <a href="About Me">About Me</a> <!--links to about me section use anchor elements -->
-          </li>
-            <li>
-                <a href="My Projects">My Projects</a><!--links to Projects section use anchor elements-->
-            </li>
-                <li>
-                    <a href= "Contact Me">Contact Me</a><!--links to contact section use anchor elements -->
-                  </li>
-      </ul>
-      </nav>
-  </header>
+<!--Beige text centered, Web Designer smaller and centered-->
 
-<!--about me section -->
-<section>
-  <h1>
-    Hi! My name is Mark, Web Developer Extraordinair!
-  </h1>
-  <div class ="abtme">
-<p>
-  I'm a Full stack Developer located in the middle of a corn field in Indiana. I am driven
-  t o providing you with an optimized, creative and user friendly web experience!
-</p> 
+
+<header class="beige-text-container-section-container">
+  <div class ="text-align-centered">
+  <h1>Hi! I am Mark Fleming</h1>
+  <p>Web Designer</p>
 </div>
-</section>
+</header>
 
-<!--Projects page include pseudo classes for hover to change opacity-->
-<section>
-  <div class= "projects">
-    <h2>My projects</h2>
-
-      <a href="Run Buddy">Run Buddy</a><!--link to Run buddy website-->
-
-      <a href="Calculator">Calculator</a><!--placeholder -->
-    
-        <a href="Surf Report">Surf Report</a><!--placeholder-->
-  
-        <a href="LED wall">LED Wall</a><!--placeholder -->
-
-        <a href="Pastel Puzzel">Pastel Puzzel</a><!--placeholder-->
-      
+<section class="card-align-right">
+  <h2>About me</h2>
+  <div class="abt-me-img">
+    <img src="assets/images/Mark-photo.jpg" alt="Mark looking dapper in his tux" class= "img" /> 
+  </div>
+  <div class="abtme">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+      anim id est laborum.
+    </p>
   </div>
 </section>
-  <!--contact section-->
 
-  <footer>
-    
-    <div class="contact">
-    <h2>Contact Me</h2>
-    </div>  
+<section>
+  <div class="projects">
+    <h2>Projects</h2>
 
-    <div class= "contact">
-      <p>Phone Number</p>
-      <p>574.555.5555</p>
+    <div class="project-card">
+      <img src="/assets/images/run-buddy.jpg" class="img-run-buddy" alt="run-buddy-landing-page" />
+    <h3>Run Buddy</h3>
+    <p>HTML/CSS</p>
     </div>
-
-    <div class="contact">
-      <p>Email</p>
-      <p>markcfleming1990@gmail.com</p><!--emailto element -->
+    <div class="project-card">
+      <img src="/assets/images/portfolio-1.jpg" class="img-calculator" alt="calculator-placeholder" />
+    <h3>Surf Report</h3>
+    <p>React/JavaScript/CSS</p>
     </div>
-
-    <div class="contact">
-      <a href="Linkedin">Linkedin</a><!--link to updated linkedin profile-->
+    <div class="project-card">
+      <img src="/assets/images/portfolio-2.jpg" class="img-SURF Report" alt="SURF-report-placeholder" />
+    <h3>Surf Report</h3>
+    <p>MERN Stack</p>
     </div>
-  </footer>
+    <div class="project-card">
+      <img src="/assets/images/portfolio-3.jpg" class="img-LED-Wall" alt="LED-Wall-placeholder" />
+    <h3>LED Wall</h3>
+    <p>Node/IoT</p>
+    </div>
+    <div class="project-card">
+      <img src="/assets/images/portfolio-4.jpg" class="img-pastel-puzzel" alt="img-pastel-puzzel" />
+    <h3>Run Buddy</h3>
+    <p>MERN Stack</p>
+    </div>
+  </div>
+</section>
 
-  </body>
-
-  </html>
+<footer class="beige-text-container section-container">
+  
+<h3>Get in touch!</h3>
+<div class="centered-text-beige">
+  <h4>Email Me</h4>markcfleming1990@gmail.com
+  <h4>Call me:</h4>574.555.5555 <br>
+  <a href="Linkedin">Linkedin</a>
+</div>
+</footer>
