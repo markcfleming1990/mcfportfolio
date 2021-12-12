@@ -64,25 +64,22 @@ padding: 10px;
 
 .project-card {
   display: flex;
-  flex-wrap: nowrap;
-  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  justify-items: center;
   margin: 10px;
   padding: 10px;
 
 }
 
-.project-card h3 {
-  display: flex;
-  flex-direction:column;
-  justify-content: left;
-  margin: 10px 10px 0 0;
-
+.project-card p {
+  display:flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  flex-basis: 100%;
 }
 
-.project-card p {
- display: flex;
- flex-direction: column;
- justify-items: left;
- margin: 20px 20px 0 0;
+.beige-text-container-section-container h3 {
+  padding : 10px;
+  margin: 10px;
 }
