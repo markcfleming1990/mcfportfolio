@@ -1,77 +1,131 @@
-<!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
-        <link rel="stylesheet" href="./assets/style.css"/>
-        <meta charset="UTF-8" />
-        <title>Mark Fleming's Portfolio</title>
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--<link rel="stylesheet" href="./assets/css/styles.css">-->
+  <title>Mark | Software Developer</title>
+</head>
 
 
-<!--Beige text centered, Web Designer smaller and centered-->
-
-
-<header class="beige-text-container-section-container">
-  <div class ="text-align-centered">
-  <h1>Hi! I am Mark Fleming</h1>
-  <p>Web Designer</p>
-</div>
-</header>
-
-<section class="card-align-right">
-  <h2>About me</h2>
-  <div class="abt-me-img">
-    <img src="assets/images/Mark-photo.jpg" alt="Mark looking dapper in his tux" class= "img" /> 
+<body class="bg-blue-100">
+  <!--nav bar-->
+  <div class="bg-gray-100 text-4xl w-full px-5 lg:px-14 py-5 md:pb-0 text-tertiary font-inter">
+    <nav class="tracking widest flex justify-between md:flex font-light">
+      <a href="Home" class="hover:rotate-6 text-base 3xl:text-lg inline my-auto mr-8">Home</a>
+      <a href="About" class="hover:rotate-6 text-base 3xl:text-lg inline my-auto mr-8">About</a>
+      <a href="Projects" class="hover:rotate-6 text-base 3xl:text-lg inline my-auto mr-8">Projects</a>
+      <a href="Contact" class="hover:rotate-6 text-base 3xl:text-lg inline my-auto mr-8">Contact</a>
+    </nav>
   </div>
-  <div class="abtme">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-      anim id est laborum.
-    </p>
-  </div>
-</section>
 
-<section>
-  <div class="projects">
-    <h2>Projects</h2>
+  <!--About me section auto typing above this aligned left-->
+  <section id="about" class="flex px-10 mt-40 pt-48 pb-48 bg-blue-100">
+    <div class="grid grid-cols-2 gap-40">
+      <div>
+        <h2 class="text-2xl font-bold pb-4">
+          About Me.
+        </h2 class>
+        <p class="text-xl"> My name is Mark Fleming, I am a student attending a Full Stack Developer bootcamp at Butler
+          University.
+          Currently working on learning a variety of languages and develop </p>
+      </div>
 
-    <div class="project-card">
-      <img src="./assets/images/run-buddy.jpg" class="img" alt="run-buddy-landing-page" />
-    <h3>Run Buddy</h3>
-    
-    </div>
-    <div class="project-card">
-      <img src="./assets/images/portfolio-1.jpg" class="img" alt="LED Wall-placeholder" />
-    <h3>LED wall</h3>
-    
-    </div>
-    <div class="project-card">
-      <img src="./assets/images/portfolio-2.jpg" class="img" alt="calculator-placeholder" />
-    <h3>Calculator</h3>
-    </div>
-    <div class="project-card">
-      <img src="./assets/images/portfolio-3.jpg" class="img" alt="pastel-puzzel-placeholder" />
-    <h3>Pastel Puzzel</h3>
-    </div>
-    <div class="project-card">
-      <img src="./assets/images/portfolio-4.jpg" class="img" alt="surf-report-puzzel" />
-    <h3>Surf Report</h3>
-    </div>
-  </div>
-</section>
 
-<footer class="beige-text-container-section-container">
-  
-<h3>Get in touch!</h3>
-<div class="centered-text-beige">
-  <div class="header4">
-  <h4>Email Me:</h4><p>markcfleming1990@gmail.com</p>
-  <h4>Call Me:</h4><p>574.555.5555</p> <br>
-  <a href="Linkedin">Linkedin</a>
-  </div>
-</div>
-</footer>
+      <!--Alighned right education and aspects learned-->
+      <div class="justify-items-end pb-4">
+        <h2 class="text-2xl font-bold pb-4">
+          Skill Set.
+        </h2>
+        <ul>
+          <li>
+            HTML
+          </li>
+          <li>
+            CSS
+          </li>
+          <li>
+            Tailwind
+          </li>
+          <li>
+            BootStrap
+          </li>
+          <li>
+            JavaScript
+          </li>
+          <li>
+            3rd Party APIs
+          </li>
+      </div>
+    </div>
+
+    <img class="pr-20" src="assets/images/Mark-photo.jpg" alt="Mark in Tux" width="500" height="500">
+  </section>
+
+  <!--grid with class projects on it -->
+  <section class="bg-blue-100 py-20 px-10">
+    <h3 class="font-bold p-10 justify-items-start text-2xl">Projects</h3>
+    <div class=" grid justify-items-start grid-cols-3 gap-2">
+
+      <div class=" rounded border-2">
+
+        <a href="https://markcfleming1990.github.io/run-buddy/">
+          <img src="assets/images/run-buddy.jpg" alt="Run-buddy" width="300" height="300">
+        </a>
+        Run Buddy
+      </div>
+      <div class=" rounded border-2">
+        <img src="assets/images/portfolio-1.jpg" alt="LED Wall" width="300" height="300">
+        LED Wall
+      </div>
+      <div class=" rounded border-2">
+        <img src="assets/images/portfolio-2.jpg" alt="Calculator" width="300" height="300">
+        Calculator
+      </div>
+      <div class=" rounded border-2">
+        <img src="assets/images/portfolio-3.jpg" alt="Pastel Puzzel" width="300" height="300">
+        Pastel Puzzel
+      </div>
+      <div class=" rounded border-2">
+        <img src="assets/images/portfolio-4.jpg" alt="Surf Report" width="300" height="300">
+        Surf Report
+      </div>
+    </div>
+  </section>
+
+  <!--Separate bar with group collab projects such as tinyNote-->
+  <section>
+    <h3 class="font-bold p-10 justify-items-start text-2xl">Group Collaborations</h3>
+    <div class="rounded border-2">
+      <a href="https://gsd79.github.io/tiny-note/">
+        <img src="assets/images/Laptop image.jpg" alt="laptop image" width="200" height="200">
+      </a>
+      Tiny Note
+    </div>
+
+  </section>
+  <!--contact me form with Github repo link, Linkdin link-->
+  <footer class="border-t-2 border-black">
+    <div class="flex justify-between">
+      <div class=" grid grid-cols-4 gap-4 font-bold p-10 justify-between text-2xl">
+        <h2>
+          Contact Me:
+        </h2>
+        <div>
+          574-323-8728
+        </div>
+        <div>
+          <a href="mailto: markcfleming1990@gmail.com">Email me</a>
+        </div>
+        <div>
+          <a href="https://github.com/markcfleming1990">
+            Github Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
